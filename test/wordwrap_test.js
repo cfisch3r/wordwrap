@@ -17,4 +17,9 @@ describe('wordwrap', function() {
       wrappedText.should.equal('test\ntest');
     });
 
+    it('breaks text with space after limit and skips space.', function() {
+      var wrappedText = wordrap('test test',4);
+      wrappedText.should.equal('test\ntest');
+    });
+
   });
