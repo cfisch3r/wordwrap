@@ -1,5 +1,6 @@
 {
 	"scripts": {
     		"test": "mocha"
-	}
+	},
+	"main": "lib/wordwrap.js"
 }
