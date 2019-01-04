@@ -12,4 +12,9 @@ describe('wordwrap', function() {
       wrappedText.should.equal('test');
     });
 
+    it('breaks text longer than limit with after limit.', function() {
+      var wrappedText = wordrap('testtest',4);
+      wrappedText.should.equal('test\ntest');
+    });
+
   });
