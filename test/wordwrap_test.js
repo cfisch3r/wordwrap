@@ -7,7 +7,7 @@ describe('wordwrap', function() {
       wrappedText.should.equal('');
     });
 
-    it('wraps text shorter within limit with no line break.', function() {
+    it('wraps text within limit with no line break.', function() {
       var wrappedText = wordwrap('test',4);
       wrappedText.should.equal('test');
     });
